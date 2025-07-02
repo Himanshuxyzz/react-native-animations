@@ -1,5 +1,15 @@
-import { ScreenContent } from 'components/ScreenContent';
+import { View } from 'react-native';
+import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 export default function TabOneScreen() {
-  return <ScreenContent path="screens/one.tsx" title="Tab One" />;
+  const insets = useSafeAreaInsets();
+  return (
+    <>
+      <View
+        style={{
+          paddingTop: insets.top,
+          paddingBottom: insets.bottom,
+        }}></View>
+    </>
+  );
 }
