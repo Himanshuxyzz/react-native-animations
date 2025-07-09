@@ -23,7 +23,8 @@
     ],
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "com.azazel-sensie.reactnativeanimations"
+      "bundleIdentifier": "com.azazel-sensie.reactnativeanimations",
+      "appleTeamId": "DN7FKWW353"
     },
     "android": {
       "adaptiveIcon": {

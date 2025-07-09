@@ -5,7 +5,7 @@ const Values = () => {
   //   const position = useRef(new Animated.Value(0)).current; // old method
   const position = useAnimatedValue(0); // new method using this useAnimatedValue hook which uses same implementation with refs
 
-  //we dont have the hook for the xy values so here we had to use the tradation useRef approach
+  //we dont have the hook for the xy values so here we had to use the tradational useRef approach
   const xyValue = useRef(
     new Animated.ValueXY({
       x: 0,

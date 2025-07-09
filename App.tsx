@@ -8,6 +8,13 @@ import NoLibrary from 'tutorial/No-Library/NoLibrary';
 import Baiscs from 'tutorial/No-Library/Baiscs';
 import Values from 'tutorial/No-Library/Values';
 import Interpolation from 'tutorial/No-Library/Interpolation';
+import AnimTypes from 'tutorial/No-Library/AnimTypes';
+import Easing from 'tutorial/No-Library/Easing';
+import NestingFunction from 'tutorial/No-Library/NestingFunction';
+import Event from 'tutorial/No-Library/Event';
+import CreateAnimatedComponent from 'tutorial/No-Library/CreateAnimatedComponent';
+import LayoutAnimationComponent from 'tutorial/No-Library/LayoutAnimation';
+import ScrollEvents from 'tutorial/No-Library/ScrollEvents';
 
 export default function App() {
   return (
@@ -20,7 +27,14 @@ export default function App() {
       {/* Animated API */}
       {/* <Baiscs /> */}
       {/* <Values /> */}
-      <Interpolation />
+      {/* <Interpolation /> */}
+      {/* <AnimTypes /> */}
+      {/* <Easing /> */}
+      {/* <NestingFunction /> */}
+      {/* <Event /> */}
+      {/* <CreateAnimatedComponent /> */}
+      {/* <LayoutAnimationComponent /> */}
+      <ScrollEvents />
     </View>
   );
 }

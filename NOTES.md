@@ -1,4 +1,4 @@
-VIDEO URL -> https://www.youtube.com/watch?v=v8i1IaZ1E94&t=841s [01:56:00]
+VIDEO URL -> https://www.youtube.com/watch?v=v8i1IaZ1E94&t=841s [03:06:00]
 
 # ANIMATIONS
 
@@ -105,3 +105,38 @@ If you animate a value from 0 to 1, but the animation tries to go to 1.5, clampi
 
 Easing is way of how animation or movement start and ends instead of moving at a constant speed, easing makes the motion feel more natural,
 For e.g - car doesn't start and stop instantly it gradually speeds up or slow down
+
+# TYPES OF ANIMATION FUNCTIONS IN THE REACT NATIVE
+
+1. DECAY
+2. SPRING
+3. TIMING
+
+//## notes about interpolation
+// When springValue is 0, the box position is 0
+// When springValue is 100, the box position is 200
+// And for any value in between, it calculates proportionally:
+// When springValue is 50, the box moves 100 pixels
+// When springValue is 25, the box moves 50 pixels
+// That's what interpolation does - it creates a relationship between your animation value and how things look on screen.
+
+### When to use useNativeDriver true and when not to use ?
+
+## When to use ?
+
+It's helpul when there is transform animation or opacity animation is involed
+
+1. slide ins slide outs etc
+2. opacity
+
+## When not to use ?
+
+It's better not to use useNativeDriver true in case where we have to do animation for
+
+1. width, height, top, left, bottom.
+2. background color
+3. color transitions
+4. text size animation
+5. position change of element of scroll or event
+
+The fundamental reason is that the native animation driver can only animate properties that don't require JavaScript to recalculate layout on each frame.
