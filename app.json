@@ -9,6 +9,7 @@
     "experiments": {
       "tsconfigPaths": true
     },
+    "newArchEnabled": true,
     "plugins": [],
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -18,9 +19,7 @@
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
-    "assetBundlePatterns": [
-      "**/*"
-    ],
+    "assetBundlePatterns": ["**/*"],
     "ios": {
       "supportsTablet": true,
       "bundleIdentifier": "com.azazel-sensie.reactnativeanimations",

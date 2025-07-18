@@ -140,3 +140,31 @@ It's better not to use useNativeDriver true in case where we have to do animatio
 5. position change of element of scroll or event
 
 The fundamental reason is that the native animation driver can only animate properties that don't require JavaScript to recalculate layout on each frame.
+
+# Reanimated
+
+### Difference between reanimated and Animated api
+
+#### Reanimated
+
+Reanimated is a powerful animation library built by software mansion, with reanimated you can easily create smooth animations and interactions that run on the ui thread.
+
+1. Run on the UI thread (better performance)
+2. In reanimated we get gesture based animations much suitable for complex physics based animations.
+3. In this we get worklets and direct manipulation
+   3.1. reanimated introduces worklets which allow you to write animations and transformaitons in a way that bypasses the js thread, which results in faster responses to gesture better frame rates, and a more fluid ui.
+4. Provides better gesture handling when combined touch gestures (e.g - swipe, drag, pinch to zoom)
+5. It provides support for the shared element transitions.
+6. It supports Native driver 2.0 which allows more properties to be animated compared to the default animated api.
+
+#### Animated Api
+
+1. The animated api mostly runs animation on the js thread.
+2. Animated api limited to predefined interpolations and sequences in simple not for the complex animation.
+3. It doesn't supports the shared elemnent transitions.
+
+### When to use Animated api ?
+
+1. If only need simple animations (e.g opacity,scaling, basic interpolations).
+2. If performance is not an issue (i.e no heavy js thread usage).
+3. If you don't need advanced gestures or physics-based animtions
