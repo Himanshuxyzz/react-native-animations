@@ -1,4 +1,4 @@
-VIDEO URL -> https://www.youtube.com/watch?v=v8i1IaZ1E94&t=841s [03:06:00]
+VIDEO URL -> https://www.youtube.com/watch?v=v8i1IaZ1E94&t=841s [03:19:00]
 
 # ANIMATIONS
 
